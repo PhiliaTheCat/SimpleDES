@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "Merge_Sort": "cpp",
+        "Bubble_Sort": "cpp",
+        "Complex": "cpp",
+        "High_Precision": "cpp",
+        "Iterator_Traits": "cpp",
+        "Modulus": "cpp",
+        "Quick_Sort": "cpp",
+        "*.hpp": "cpp",
+        "bitset": "cpp",
+        "key": "cpp",
+        "constant": "cpp"
+    }
+}

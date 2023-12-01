@@ -1,0 +1,27 @@
+#ifndef __INCLUDED_KEY__
+    #define __INCLUDED_KEY__
+
+    #include <bitset>
+    
+    namespace ptc
+    {
+        class SubKey
+        {
+            private:
+            std::bitset<48> b;
+
+            public:
+            SubKey(const unsigned long long &num = 0);
+            SubKey(const SubKey &src);
+
+            SubKey &operator =(const SubKey &src);
+
+            friend SubKey KeyOut(const std::bitset<56> &src);
+        };
+
+        void SubKeyGen(const std::bitset<64> &src, SubKey key[16]);
+        std::bitset<56> KeyInit(const std::bitset<64> &src);
+        void LeftShift(std::bitset<56> &base, const int &step);
+    }
+
+#endif
