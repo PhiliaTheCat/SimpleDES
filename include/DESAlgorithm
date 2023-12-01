@@ -1,0 +1,18 @@
+#ifndef __INCLUDED_DESALGORITHM__
+#define __INCLUDED_DESALGORITHM__
+
+#include <bitset>
+
+#include "Key"
+
+namespace ptc
+{
+    void Split(const std::bitset<64> &src, std::bitset<32> &L, std::bitset<32> &R);
+    void Round(std::bitset<32> &L, std::bitset<32> &R, const SubKey &key);
+    std::bitset<32> f(const std::bitset<32> &src, const SubKey &key);
+    std::bitset<48> E(const std::bitset<32> &src);
+    std::bitset<4> S(const bool &a1, const bool &a2, const bool &a3, const bool &a4, const bool &a5, const bool &a6, const int &index);
+    std::bitset<32> P(const std::bitset<32> &src);
+    std::bitset<64> Merge(const std::bitset<32> &L, const std::bitset<32> &R);
+}
+#endif

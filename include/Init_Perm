@@ -1,0 +1,11 @@
+#ifndef __INCLUDED_INIT_PERM__
+#define __INCLUDED_INIT_PERM__
+
+#include <bitset>
+
+namespace ptc
+{
+    std::bitset<64> Init_Perm(const std::bitset<64> &src);
+    std::bitset<64> Inv_Init_Perm(const std::bitset<64> &src);
+}
+#endif

@@ -1,0 +1,5 @@
+# CPP Properties
+src/*.obj
+
+# VS Code Properties
+.vscode
